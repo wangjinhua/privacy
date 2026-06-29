@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>熟读唐诗三百首</title>
+  <meta name="description" content="熟读唐诗三百首是一款离线唐诗学习 App，收录唐诗三百首，支持朗读、竖排诗文、学习进度、收藏和搜索。">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f7f3ec;
+      --paper: #fffaf2;
+      --ink: #241f1a;
+      --muted: #6f665d;
+      --line: #ddd2c4;
+      --accent: #9f3e2f;
+      --green: #2f7d61;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #151412;
+        --paper: #201c18;
+        --ink: #f1e7dc;
+        --muted: #b9aa9b;
+        --line: #3a332d;
+        --accent: #e08a72;
+        --green: #74b99c;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.75;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 64px 22px 72px;
+    }
+
+    header {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(38px, 8vw, 72px);
+      line-height: 1.08;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      margin: 0;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: clamp(18px, 3vw, 22px);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 9px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    section {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      color: var(--accent);
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .feature {
+      min-height: 160px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .feature p,
+    .note {
+      color: var(--muted);
+    }
+
+    .privacy {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    footer {
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding-top: 44px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>熟读唐诗三百首</h1>
+      <p class="intro">以朗读、竖排诗文和本地学习进度，帮助你在安静的阅读节奏里熟悉唐诗三百首。</p>
+      <nav class="links" aria-label="相关链接">
+        <a class="button primary" href="support.html">获取支持</a>
+        <a class="button" href="privacy.html">隐私政策</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>核心功能</h2>
+      <div class="features">
+        <article class="feature">
+          <h3>唐诗三百首</h3>
+          <p>收录经典篇目，支持按热门、作者、收藏和学习进度浏览。</p>
+        </article>
+        <article class="feature">
+          <h3>朗读与进度</h3>
+          <p>内置诗文朗读，可开启朗读进度高亮，帮助跟随节奏理解诗句。</p>
+        </article>
+        <article class="feature">
+          <h3>竖排诗文</h3>
+          <p>提供适合古诗阅读的竖排展示，也可在设置中调整字号和播放速度。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>离线学习</h2>
+      <p>诗文、译文、插图和朗读资源随 App 内置，无需注册账号，打开即可使用。</p>
+      <p class="note">学习进度、已听状态、收藏和设置仅保存在当前设备本地。</p>
+    </section>
+
+    <section>
+      <h2>隐私承诺</h2>
+      <p class="privacy">不追踪，不收集个人数据，不包含广告 SDK、分析 SDK 或第三方追踪 SDK。</p>
+    </section>
+
+    <footer>
+      <p>© 2026 熟读唐诗三百首</p>
+    </footer>
+  </main>
+</body>
+</html>
