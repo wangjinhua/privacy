@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>熟读唐诗三百首支持</title>
+  <meta name="description" content="熟读唐诗三百首 App 支持页面。">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f7f3ec;
+      --ink: #241f1a;
+      --muted: #6f665d;
+      --line: #ddd2c4;
+      --accent: #9f3e2f;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #151412;
+        --ink: #f1e7dc;
+        --muted: #b9aa9b;
+        --line: #3a332d;
+        --accent: #e08a72;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.75;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 22px 72px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 7vw, 44px);
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      margin: 0 0 36px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    section {
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.25em;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>熟读唐诗三百首支持</h1>
+    <p class="intro">这里提供熟读唐诗三百首 App 的使用说明和支持信息。</p>
+
+    <section>
+      <h2>常见问题</h2>
+      <ul>
+        <li>应用无需登录账号，打开后即可离线使用。</li>
+        <li>诗文、译文、插图和朗读资源均随 App 内置。</li>
+        <li>学习进度、已听状态、收藏和设置仅保存在当前设备本地。</li>
+        <li>如重新安装 App，本地学习进度可能会被系统清除。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>隐私</h2>
+      <p>熟读唐诗三百首不追踪用户，不收集个人信息，不包含广告 SDK、分析 SDK 或第三方追踪 SDK。</p>
+      <p><a href="privacy.html">查看隐私政策</a></p>
+    </section>
+
+    <section>
+      <h2>联系我们</h2>
+      <p>如遇到问题，请通过 App Store 页面提供的开发者联系方式联系我们，并尽量附上设备型号、系统版本和问题描述。</p>
+    </section>
+  </main>
+</body>
+</html>
